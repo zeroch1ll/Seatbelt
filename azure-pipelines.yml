@@ -19,6 +19,9 @@ steps:
 
 - task: NuGetCommand@2
   inputs:
+- task: NuGetToolInstaller@1
+  inputs:
+    versionSpec: 
     restoreSolution: '$(solution)'
 
 - task: VSBuild@1
